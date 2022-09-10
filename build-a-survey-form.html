@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>My First HTML Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./build-a-survey-form.css">
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="container">
+    <h1 id="title">Customer Feedback Form</h1>
+    <p id="description">Thank you for taking the time to help us improve your experience.</p>
+    <!-- FORM -->
+    <form id="survey-form">
+      <!-- DEMOGRAPHICS -->
+      <fieldset>
+        <h2>Customer Details</h2>
+        <label id="name-label">
+          Name: <input required id="name" type="text" placeholder="Jane Doe">
+        </label>
+          <label id="email-label">
+            Email: <input required id="email" type="email" placeholder="janedoe@gmail.com">
+          </label>
+          <label id="number-label">
+            Age: <input id="number" type="number" min="13" max="120" placeholder="12">
+          </label>
+          <label>Gender: 
+            <select id="dropdown">
+              <option>(select one)</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <!-- OTHER INFORMATION -->
+        <fieldset><h2>Customer Feedback</h2>
+        <h3>Overall, how was your experience:</h3>
+          <label for="positive"><input class="inline" type="radio" name="pos-neg-neu" value="positive"> Positive
+          </label>
+          <label for="negative"><input class="inline" type="radio" name="pos-neg-neu" value="negative"> Negative
+          </label>
+          <label for="neutral"><input class="inline" type="radio" name="pos-neg-neu" value="neutral"> Neutral
+          </label>
+          <h3>Check any that apply:</h3>
+            <label><input value="1" class="inline" type="checkbox"> 1
+            </label>
+            <label><input value="2" class="inline" type="checkbox"> 2
+            </label>
+            <label><input value="3" class="inline" type="checkbox"> 3
+            </label>  
+            <h3>Please provide any additional feedback: </h3>
+              <label><textarea rows="3" cols="30" placeholder="Additional Comments..."></textarea>
+              </label>
+              </fieldset>
+              <input id="submit" type="Submit" value="Submit">
+      </form>
+      </div>
+    <body>
+  </html>
